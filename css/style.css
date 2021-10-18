@@ -1,0 +1,328 @@
+@font-face {
+    font-family: 'bjg-pixel-brandon-james-greer';
+    src:url('../css/fonts/bjg-pixel-brandon-james-greer.woff2') format('woff2'),
+    url('../css/fonts/bjg-pixel-brandon-james-greer.woff') format('woff'),
+    url('../css/fonts/bjg-pixel-brandon-james-greer.ttf') format('truetype');
+} 
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'bjg-pixel-brandon-james-greer';
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-size: 100%;
+    /* overflow: auto; */
+}
+
+h1{
+    font-family: 'bjg-pixel-brandon-james-greer';
+    font-size: 1.66vw;
+    color: #f1f6f0;
+}
+
+.box_background{
+    background-image: url('../css/img/background_full.png');
+    width: 100%;
+    height: 100%;
+    display: flex;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+section{
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-align: start;
+    flex: none;
+}
+
+.box_main{
+    display: flex;
+    /* justify-content: space-between; */
+    flex-basis: auto;
+    gap: 8vw;
+    padding-top: 6.25vw;
+    margin-left: 100px;
+    margin-right: 10.25vw;
+}
+
+.box_writing{
+    display: flex;
+    flex-direction: column;
+    font-family: 'bjg-pixel-brandon-james-greer';
+    font-size: 1.66vw;
+    line-height: 2.36vw;
+    color: #f1f6f0;
+}
+
+.box_arrow{
+    margin-top: -8vw;
+    text-align: center;
+}
+
+.box_dropoff{
+    margin-top: -6.95vw;
+    text-align: center;
+}
+
+.arrow_img,
+.dropoff_img,
+.boxes{
+    width: 100%;
+    height: auto;
+}
+
+.box_about{
+    margin-top: 4.16vw;
+}
+
+
+#box_rails{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 4vw;
+    width: 120vw;
+    /* background-color: red; */
+    top: -6vw;
+}
+
+.box_canvas1{
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.box_canvas2{
+    height: 200px;
+    /* background-color: purple; */
+}
+
+.box_boxes_1,
+.box_boxes_2{
+  height: 4vw;
+  /* background-color: green; */
+  position: relative;
+}
+
+#box_boxes_2__id{
+    position: absolute;
+    bottom: 0;
+    left: -30vw;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: flex-end;
+    height: 15vw;
+}
+
+.box_rails_1,
+.box_rails_2{
+  height: 4.5vw;
+  width: auto;
+  /* background-color: yellow; */
+}
+
+.boxes{
+    object-fit: contain;
+}
+
+#bttn{
+    position: absolute;
+    z-index: 1;
+    right: 22vw;
+    bottom: 3vw;
+}
+
+/* ====== STUDY PAGE =======*/
+
+.box_study_main{
+    width: 90vw;
+    height: 90vh;
+    margin: auto;
+    /* background-color: red; */
+    display: flex;
+}
+
+.box_study_text{
+    width: 45vw;
+    color: #f1f6f0;
+    margin-top: 6vw;
+    /* background-color: blue; */
+}
+
+.box_study_images{
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.box_study_sign{
+    height: 45vh;
+    /* background-color: green; */
+    text-align: center;
+    margin-top: -6vw;
+}
+
+.box_study_railboxes{
+    text-align: center;
+    margin-bottom: -6vw;
+    margin-left: -4vw;
+    /* background-color: purple; */
+}
+
+
+/* ====== ABOUT PAGE =======*/
+
+.box_about_main{
+    width: 90vw;
+    height: 90vh;
+    margin: auto;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.box_about_text{
+    width: 50vw;
+    color: #f1f6f0;
+    font-size: 20px;
+    margin-top: 6vw;
+    /* background-color: blue; */
+}
+
+.box_study_images{
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.box_about_sign{
+    height: 45vh;
+    /* background-color: green; */
+    text-align: center;
+    margin-top: -6vw;
+}
+
+
+
+/* ====== PROJECTS PAGE =======*/
+
+.box_projects_main{
+    width: 90vw;
+    height: 90vh;
+    margin: 5vh auto;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.box_projects_text{
+    width: 50vw;
+    color: #f1f6f0;
+    margin-top: 6vw;
+    /* background-color: blue; */
+}
+
+.box_projects_images{
+    /* width: 45vw; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.box_projects_sign{
+    height: 45vh;
+    /* background-color: green; */
+    text-align: center;
+    margin-bottom: -10vw;
+}
+
+
+/* ====== CONTACT PAGE =======*/
+
+.box_contact_main{
+    width: 90vw;
+    height: 90vh;
+    margin: 5vh auto;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    gap: 10vw;
+}
+
+.box_contact_text{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 6vw;
+    color: #f1f6f0;
+    /* margin-top: 6vw; */
+    /* background-color: blue; */
+}
+
+.box_contact_text__text{
+    width: auto;
+    height: auto;
+    color: #f1f6f0;
+    font-size: 26px;
+    text-align: center;
+    padding-top: 6vw;
+    /* margin-top: 6vw; */
+    /* background-color: purple; */
+}
+
+.box_contact_text__logos{
+    width: auto;
+    height: auto;
+    /* text-align: center; */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: #f1f6f0;
+    /* margin-top: 6vw; */
+    /* background-color: yellow; */
+}
+
+.box_contact_images{
+    width: auto;
+    height: auto;
+    margin-top: -10vw;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-end; */
+}
+
+.box_contact_sign{
+    height: 45vh;
+    /* background-color: green; */
+    text-align: center;
+    margin-bottom: -10vw;
+}
+
+
+
+
+
+
+
+
+
+

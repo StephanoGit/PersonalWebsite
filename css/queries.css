@@ -1,0 +1,34 @@
+@media only screen and (min-width: 1440px){
+
+    .arrow_img,
+    .dropoff_img{
+        width: 120%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .box_arrow,
+    .box_dropoff{
+        display: none;
+    }
+
+    box_sign_mobile_img{
+        display: inline;
+    }
+
+    .box_main{
+        justify-content: center;
+        margin: auto ;
+    }
+
+    .box_writing{
+        margin-top: 50px;
+        font-size: 0.95em;
+        line-height: 28px;
+    }
+
+    #box_rails{
+        display: none;
+    }
+}
