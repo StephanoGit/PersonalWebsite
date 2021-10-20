@@ -27,11 +27,11 @@ let proportion2 = 2.5;
 
 //get the spriteSheets for rails
 const railSpriteSheet = new Image();
-railSpriteSheet.src="/css/img/railswsupport_spriteSheet.png";
+railSpriteSheet.src="css/img/railswsupport_spriteSheet.png";
 const railEndSpriteSheet = new Image();
-railEndSpriteSheet.src="/css/img/railsend_spriteSheet.png";
+railEndSpriteSheet.src="css/img/railsend_spriteSheet.png";
 const railEndFlippedSpriteSheet = new Image();
-railEndFlippedSpriteSheet.src="/css/img/railsend_flipped_spriteSheet.png";
+railEndFlippedSpriteSheet.src="css/img/railsend_flipped_spriteSheet.png";
 
 //draw initial state of rails when page is open and button not pressed
 function drawStationaryRails(){
