@@ -248,10 +248,10 @@ function changeImg(){
   var img = document.getElementById('bttn');
   if(img.src.match("button_unpressed.png")){
     bttnState = true;
-    img.src = "../css/img/button_pressed.png";
+    img.src = "PersonalWebsite/css/img/button_pressed.png";
   } else {
     bttnState = false;
-    img.src = "../css/img/button_unpressed.png"
+    img.src = "PersonalWebsite/css/img/button_unpressed.png"
   }
 }
 
