@@ -251,7 +251,7 @@ function changeImg(){
     img.src = "PersonalWebsite/css/img/button_pressed.png";
   } else {
     bttnState = false;
-    img.src = "PersonalWebsite/css/img/button_unpressed.png"
+    img.src = "PersonalWebsite/css/img/button_unpressed.png";
   }
 }
 
