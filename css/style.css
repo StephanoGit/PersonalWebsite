@@ -119,7 +119,8 @@ section{
   position: relative;
 }
 
-#box_boxes_2__id{
+#box_boxes_2__id,
+#box_boxes_1__id{
     position: absolute;
     bottom: 0;
     left: -30vw;

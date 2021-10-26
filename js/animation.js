@@ -224,11 +224,18 @@ function frame(){
 }
 
 let id = null;
-const box_aboutme = document.getElementById("box_boxes_2");
-let pos = 0;
+const boxes_downrail = document.getElementById("box_boxes_2");
+const boxes_uprail = document.getElementById("box_boxes_1");
+
+let pos_down = 0;
+let pos_up = 0;
 function moveBox(){
-  pos = pos + 1.2;
-  box_aboutme.style.left = pos + 'px';
+  pos_down = pos_down + 1.2;
+  boxes_downrail.style.left = pos_down + 'px';
+
+  pos_up = pos_up + 1.2;
+  boxes_uprail.style.right = pos_up + 'px';
+  console.log(pos_up);
 }
 
 if(bttnState == true){
