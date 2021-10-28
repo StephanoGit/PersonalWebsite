@@ -3,7 +3,22 @@
     src:url('../css/fonts/bjg-pixel-brandon-james-greer.woff2') format('woff2'),
     url('../css/fonts/bjg-pixel-brandon-james-greer.woff') format('woff'),
     url('../css/fonts/bjg-pixel-brandon-james-greer.ttf') format('truetype');
-} 
+}
+
+:root{
+    --bar-fill: green;
+    --bar-top: darkgreen;
+}
+
+.progressbar_fill{
+    fill: var(--bar-fill);
+    transition: width 0.2s linear, fill 0.2s linear;
+}
+
+.progressbar_fill-top{
+    fill: var(--bar-top);
+    transition: width 0.2s linear;
+}
 
 *,
 *::after,
@@ -46,6 +61,12 @@ section{
     height: 100vh;
     scroll-snap-align: start;
     flex: none;
+}
+
+#study_section{
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    overflow-y: scroll;
 }
 
 .box_main{
@@ -154,19 +175,37 @@ section{
     width: 90vw;
     height: 90vh;
     margin: auto;
+    justify-content: space-between;
     /* background-color: red; */
     display: flex;
 }
 
 .box_study_text{
-    width: 45vw;
+    width: 80%;
     color: #f1f6f0;
     margin-top: 6vw;
     /* background-color: blue; */
 }
 
+.table_skills{
+    /* background-color: green; */
+    width: 100%;
+    font-size: 2.4rem;
+    padding: 2rem 0;
+}
+
+td{
+    padding: 2rem 2rem;
+}
+
+.progressbar{
+    width: 30rem;
+    margin-top: 1rem;
+    /* float: right; */
+}
+
 .box_study_images{
-    width: 45vw;
+    /* width: auto; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -176,7 +215,7 @@ section{
     height: 45vh;
     /* background-color: green; */
     text-align: center;
-    margin-top: -6vw;
+    margin-top: 0;
 }
 
 .box_study_railboxes{
@@ -206,12 +245,6 @@ section{
     /* background-color: blue; */
 }
 
-.box_study_images{
-    width: 45vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
 
 .box_about_sign{
     height: 45vh;
