@@ -6,17 +6,71 @@
 }
 
 :root{
-    --bar-fill: green;
-    --bar-top: darkgreen;
+    --bar-fill0: green;
+    --bar-top0: darkgreen;
+
+    --bar-fill1: green;
+    --bar-top1: darkgreen;
+
+    --bar-fill2: green;
+    --bar-top2: darkgreen;
+
+    --bar-fill3: green;
+    --bar-top3: darkgreen;
+
+    --bar-fill4: green;
+    --bar-top4: darkgreen;
 }
 
-.progressbar_fill{
-    fill: var(--bar-fill);
+.progressbar_fill.html{
+    fill: var(--bar-fill0);
     transition: width 0.2s linear, fill 0.2s linear;
 }
 
-.progressbar_fill-top{
-    fill: var(--bar-top);
+.progressbar_fill.css{
+    fill: var(--bar-fill1);
+    transition: width 0.2s linear, fill 0.2s linear;
+}
+
+.progressbar_fill.js{
+    fill: var(--bar-fill2);
+    transition: width 0.2s linear, fill 0.2s linear;
+}
+
+.progressbar_fill.python{
+    fill: var(--bar-fill3);
+    transition: width 0.2s linear, fill 0.2s linear;
+}
+
+.progressbar_fill.java{
+    fill: var(--bar-fill4);
+    transition: width 0.2s linear, fill 0.2s linear;
+}
+
+
+
+.progressbar_fill-top.html{
+    fill: var(--bar-top0);
+    transition: width 0.2s linear;
+}
+
+.progressbar_fill-top.css{
+    fill: var(--bar-top1);
+    transition: width 0.2s linear;
+}
+
+.progressbar_fill-top.js{
+    fill: var(--bar-top2);
+    transition: width 0.2s linear;
+}
+
+.progressbar_fill-top.python{
+    fill: var(--bar-top3);
+    transition: width 0.2s linear;
+}
+
+.progressbar_fill-top.java{
+    fill: var(--bar-top4);
     transition: width 0.2s linear;
 }
 
@@ -209,19 +263,32 @@ td{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
 }
 
 .box_study_sign{
     height: 45vh;
     /* background-color: green; */
     text-align: center;
-    margin-top: 0;
+    margin-top: -8vw;
 }
 
-.box_study_railboxes{
-    text-align: center;
-    margin-bottom: -6vw;
-    margin-left: -4vw;
+@keyframes MoveUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+.box_study_arrow{
+    margin-bottom: -4vw;
+    animation: MoveUpDown 1.5s linear infinite;
+    position: absolute;
+    /* left: 5vw; */
+    bottom: -2vw;
+    /* margin-left: -4vw; */
     /* background-color: purple; */
 }
 
