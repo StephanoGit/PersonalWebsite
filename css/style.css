@@ -117,7 +117,9 @@ section{
     flex: none;
 }
 
-#study_section{
+#study_section,
+#aboutme_section,
+#projects_section{
     scroll-snap-type: x mandatory;
     overflow-x: scroll;
     overflow-y: scroll;
@@ -182,6 +184,10 @@ section{
     align-items: flex-end;
 }
 
+/* #canvas2{
+    margin-top: 4vh;
+} */
+
 .box_canvas2{
     height: 200px;
     /* background-color: purple; */
@@ -227,7 +233,7 @@ section{
 
 .box_study_main{
     width: 90vw;
-    height: 90vh;
+    height: auto;
     margin: auto;
     justify-content: space-between;
     /* background-color: red; */
@@ -245,7 +251,6 @@ section{
     /* background-color: green; */
     width: 100%;
     font-size: 2.4rem;
-    padding: 2rem 0;
 }
 
 td{
@@ -273,27 +278,12 @@ td{
     margin-top: -8vw;
 }
 
-@keyframes MoveUpDown {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-20px);
-    }
-  }
-
-.box_study_arrow{
-    margin-bottom: -4vw;
-    animation: MoveUpDown 1.5s linear infinite;
-    position: absolute;
-    /* left: 5vw; */
-    bottom: -2vw;
-    /* margin-left: -4vw; */
-    /* background-color: purple; */
-}
-
 
 /* ====== ABOUT PAGE =======*/
+
+#aboutme_section{
+    position: relative;
+}
 
 .box_about_main{
     width: 90vw;
@@ -301,14 +291,29 @@ td{
     margin: auto;
     /* background-color: red; */
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    gap: 60px;
 }
 
+.box_about_images{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: red; */
+}
+
+.aboutme_rails{
+    position: absolute;
+    bottom: -12vh;
+    /* margin-bottom: -15vh; */
+}
+
+
 .box_about_text{
-    width: 50vw;
+    /* width: 50vw; */
     color: #f1f6f0;
-    font-size: 20px;
-    margin-top: 6vw;
+    font-size: 1.13em;
+    margin-top: 4vw;
     /* background-color: blue; */
 }
 
@@ -325,35 +330,67 @@ td{
 /* ====== PROJECTS PAGE =======*/
 
 .box_projects_main{
-    width: 90vw;
-    height: 90vh;
-    margin: 5vh auto;
-    /* background-color: red; */
-    display: flex;
-    justify-content: space-between;
-}
-
-.box_projects_text{
-    width: 50vw;
-    color: #f1f6f0;
-    margin-top: 6vw;
-    /* background-color: blue; */
-}
-
-.box_projects_images{
-    /* width: 45vw; */
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    /* background-color: red; */
+    align-items: center;
+    gap: 30px;
+}
+
+.box_projects_additional{
+    width: 80vw;
+    font-size: 1.4em;
+    color: #f1f6f0;
+    text-align: center;
+    /* background-color: aqua; */
+}
+
+.box_projects_inner{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    margin: auto;
+    width: 80vw;
+    height: auto;
+    /* background-color: aliceblue; */
 }
 
 .box_projects_sign{
-    height: 45vh;
-    /* background-color: green; */
-    text-align: center;
-    margin-bottom: -10vw;
+    margin-top: -10vh;
+    /* background-color: blue; */
+    position: relative;
 }
 
+.box_projects_text{
+    position: absolute;
+    color: #f1f6f0;
+    /* background-color: red; */
+    top: 400px;
+    left: 230px;
+    font-size: 2.1em;
+}
+
+.arrow {
+    margin-top: 80px;
+    border: solid #f1f6f0;
+    border-width: 0 20px 20px 0;
+    display: inline-block;
+    padding: 20px;
+  }
+  
+.arrow-right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    box-shadow: 4px 4px 0px 4px grey;
+}
+  
+.arrow-left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    box-shadow: inset -4px -4px 0px 4px grey;
+  }
+  
 
 /* ====== CONTACT PAGE =======*/
 
