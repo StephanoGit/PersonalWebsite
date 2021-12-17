@@ -128,7 +128,6 @@ section{
 
 .box_main{
     display: flex;
-    /* justify-content: space-between; */
     flex-basis: auto;
     gap: 8vw;
     padding-top: 6.25vw;
