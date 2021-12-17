@@ -1,7 +1,7 @@
 var fills = document.querySelectorAll(".progressbar_fill");
 
 function renderFills(){
-    var array = [90, 60, 40, 70, 30];
+    var array = [90, 65, 45, 70, 30, 45];
 
     var count = 0;
     //UPDATE COLOR

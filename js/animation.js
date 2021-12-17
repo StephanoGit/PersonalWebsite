@@ -217,10 +217,12 @@ function checkScreenSize(){
 var globalID;
 
 function frame(){
-  context1.clearRect(0, 0, width1, height1);
-  context2.clearRect(0, 0, width2, height2);
-  animate();
-  globalID = requestAnimationFrame(frame);
+  if (bttnState == true){
+    context1.clearRect(0, 0, width1, height1);
+    context2.clearRect(0, 0, width2, height2);
+    animate();
+    globalID = requestAnimationFrame(frame);
+  }
 }
 
 let id = null;
@@ -229,6 +231,12 @@ const boxes_uprail = document.getElementById("box_boxes_1");
 
 let pos = 0;
 function moveBox(){
+  if (boxes_uprail.getBoundingClientRect().left <= window.screen.width * 8/9){
+    document.getElementById('bttn').disabled = true;
+    bttnState = false;
+    return;
+  }
+
   pos = pos + 1.2;
   boxes_downrail.style.left = pos + 'px';
   boxes_uprail.style.right = pos + 'px';
@@ -249,6 +257,7 @@ $("#bttn").on("mousedown", function() {
 
 function changeImg(){
   var img = document.getElementById('bttn');
+
   if(img.src.match("button_unpressed.png")){
     bttnState = true;
     img.src = "img/button_pressed.png";
