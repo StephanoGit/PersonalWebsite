@@ -32,7 +32,7 @@ slider.addEventListener("transitionend", () => {
         counter = sliderLen - 2;
         slider.style.transform = 'translateX(' + (-size * counter) + 'px)';
     }
-    if (sliderImages[counter].id === 'firstClone'){
+    if (sliderImages[counter+3].id === 'firstClone'){
         slider.style.transition = "none";
         counter = sliderLen - counter;
         slider.style.transform = 'translateX(' + (-size * counter) + 'px)';
