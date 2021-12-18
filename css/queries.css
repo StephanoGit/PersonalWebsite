@@ -1,3 +1,9 @@
+@media only screen and (min-width: 1600px) {
+    .box_about_text{
+        font-size: 1.4em;
+    }
+}
+
 @media only screen and (min-width: 1440px){
 
     .arrow_img,
@@ -6,12 +12,24 @@
         height: auto;
     }
 
-    .box_about_text{
-        font-size: 1.4em;
-    }
 }
 
 @media only screen and (max-width: 900px) {
+
+    #aboutme_section,
+    #study_section,
+    #projects_section,
+    #contact_section{
+        display: none;
+    }
+
+    .box_background{
+        display: flex;
+        flex-direction: column;
+        overflow-y: scroll;
+    }
+
+
     .box_arrow,
     .box_dropoff{
         display: none;
