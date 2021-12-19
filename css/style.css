@@ -278,6 +278,10 @@ section{
     /* background-color: blue; */
 }
 
+.mobile_table_skills{
+    display: none;
+}
+
 .table_skills{
     /* background-color: green; */
     width: 100%;

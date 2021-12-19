@@ -16,9 +16,19 @@
 
 @media only screen and (max-width: 900px) {
 
+    #home_section,
+    #study_section,
+    #aboutme_section,
+    #projects_section,
+    #contact_section{
+    scroll-snap-type: none;
+    overflow-x:visible;
+    overflow-y: visible;
+}
+
     /* #aboutme_section, */
     /* #study_section, */
-    #projects_section,
+    /* #projects_section, */
     #contact_section,
     .wires{
         display: none;
@@ -97,11 +107,16 @@
 
     .mobile_devider{
         display: block;
+        z-index: 2;
     }
 
 
 
     /* ABOUT ME PAGE */
+
+    #aboutme_section{
+        height: auto;
+    }
 
     .box_about_main{
         flex-direction: column;
@@ -144,6 +159,37 @@
         width: 100%;
         margin: auto;
     }
+
+    .box_study_sign{
+        margin-top: 0;
+        height: auto;
+    }
+
+    .box_study_text{
+        margin: 8vw auto;
+    }
+
+    .table_skills{
+        display: none;
+    }
+
+    .mobile_table_skills{
+        display: block;
+        font-size: 1.3em;
+        text-align: center;
+    }
+
+    .progressbar{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    #study_section{
+        height: auto;
+    }
+
+
+
 
 
 }
