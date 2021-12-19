@@ -46,6 +46,7 @@
     }
 
     #home_section{
+        height: auto;
         position: relative;
         overflow-x: hidden;
     }
@@ -80,7 +81,6 @@
     .mobile_boxes{
         display: flex;
         align-items: flex-end;
-        gap: -200px;
     }
 
     .top-rail{
@@ -112,6 +112,10 @@
         gap: 0;
     }
 
+    .mobile_aboutme_sign{
+        width: 100%;
+    }
+
     .box_about_text{
         text-align: center;
         font-size: 1.5em;
@@ -137,6 +141,7 @@
 
     .mobile_skillSign{
         display: block;
+        width: 100%;
         margin: auto;
     }
 
@@ -150,4 +155,29 @@
         line-height: 1.5em;
     }
 
+
+
+}
+
+@media only screen and (max-width: 500px) {
+
+    .box_writing{
+        margin-top: 50px;
+        font-size: 0.8em;
+        line-height: 1.5em;
+    }
+
+    .top-rail,
+    .bot-rail{
+        height: 20vh;
+    }
+
+    .box_about_text{
+        margin-top: -8px;
+        font-size: 0.85em;
+    }
+
+    .box_about_main{
+        margin-bottom: 4vw;
+    }
 }
