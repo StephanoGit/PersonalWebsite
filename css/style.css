@@ -105,6 +105,27 @@ body {
     /* overflow: auto; */
 }
 
+.wire1{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 3;
+}
+
+.wire2{
+    position: absolute;
+    right: 45%;
+    top: 0;
+    z-index: 3;
+}
+
+.wire3{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 3;
+}
+
 h1{
     font-family: 'bjg-pixel-brandon-james-greer';
     font-size: 1.66vw;
@@ -146,6 +167,12 @@ section{
     margin-right: 10.25vw;
 }
 
+.mobile_logo,
+.mobile_rails,
+.mobile_devider{
+    display: none;
+}
+
 .box_writing{
     display: flex;
     flex-direction: column;
@@ -164,6 +191,7 @@ section{
 .box_dropoff{
     margin-top: -6.95vw;
     text-align: center;
+    z-index: 4;
 }
 
 .arrow_img,
@@ -279,6 +307,10 @@ td{
     margin-top: -8vw;
 }
 
+.mobile_skillSign{
+    display: none;
+}
+
 
 /* ====== ABOUT PAGE =======*/
 
@@ -312,7 +344,7 @@ td{
     color: #f1f6f0;
     font-size: 1.13em;
     margin-top: 4vw;
-    /* background-color: blue; */
+    z-index: 4;
 }
 
 
@@ -441,8 +473,7 @@ td{
     font-size: 26px;
     text-align: center;
     padding-top: 6vw;
-    /* margin-top: 6vw; */
-    /* background-color: purple; */
+    z-index: 3;
 }
 
 .box_contact_text__logos{

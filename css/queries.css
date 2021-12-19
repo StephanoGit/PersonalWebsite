@@ -16,12 +16,15 @@
 
 @media only screen and (max-width: 900px) {
 
-    #aboutme_section,
-    #study_section,
+    /* #aboutme_section, */
+    /* #study_section, */
     #projects_section,
-    #contact_section{
+    #contact_section,
+    .wires{
         display: none;
     }
+
+    /* HOME PAGE */
 
     .box_background{
         display: flex;
@@ -35,22 +38,116 @@
         display: none;
     }
 
-    box_sign_mobile_img{
-        display: inline;
+    .box_main{
+        flex-direction: column;
+        margin: 0;
+        padding-top: 0;
+        gap: 0;
     }
 
-    .box_main{
-        justify-content: center;
-        margin: auto ;
+    #home_section{
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    .mobile_logo{
+        position: absolute;
+        display: block;
+        width: 35%;
+        right: 24px;
     }
 
     .box_writing{
-        margin-top: 50px;
-        font-size: 0.95em;
-        line-height: 28px;
+        margin: 0 10vw;
+        margin-top: 150px;
+        font-size: 1.8em;
+        line-height: 1.5em;
     }
 
     #box_rails{
         display: none;
     }
+
+    .mobile_rails{
+        display: flex;
+        flex-direction: column;
+        /* background-color: blue; */
+        width: 100vw;
+        height: auto;
+        margin-bottom: 100px;
+    }
+
+    .mobile_boxes{
+        display: flex;
+        align-items: flex-end;
+        gap: -200px;
+    }
+
+    .top-rail{
+        height: 30vh;
+        width: 100vw;
+        /* background-color: bisque; */
+    }
+
+    .bot-rail{
+        height: 30vh;
+        width: 100vw;
+        /* background-color: red; */
+    }
+
+    .mobile_devider{
+        display: block;
+    }
+
+
+
+    /* ABOUT ME PAGE */
+
+    .box_about_main{
+        flex-direction: column;
+        margin: 0 10vw;
+        margin-bottom: 100px;
+        width: auto;
+        height: auto;
+        gap: 0;
+    }
+
+    .box_about_text{
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    .aboutme_rails{
+        display: none;
+    }
+
+
+    /* SKILL PAGE */
+
+    .box_study_main{
+        flex-direction: column;
+        margin: 0 10vw;
+        width: auto;
+        height: auto;
+    }
+
+    .main_skillSign{
+        display: none;
+    }
+
+    .mobile_skillSign{
+        display: block;
+        margin: auto;
+    }
+
+
+}
+
+@media only screen and (max-width: 700px) {
+    .box_writing{
+        margin-top: 110px;
+        font-size: 1.4em;
+        line-height: 1.5em;
+    }
+
 }
